@@ -27,3 +27,16 @@ docker run ubuntu-sleeper 10
 
 ## Command entry point
 ENTRYPOINT
+
+ ls /root
+
+ What is the ENTRYPOINT configured on the mysql image?
+
+ docker image inspect mysql --format '{{.Config.Entrypoint}}'
+
+ docker image inspect wordpress --format '{{.Config.Cmd}}'
+
+
+ cat /root/Dockerfile-ubuntu
+
+ docker run -d --name run-ub ubuntu sleep 100
