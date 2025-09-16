@@ -33,7 +33,17 @@
 ## docker inspect <container-name>
 - more details
 - n/w information
+- IP also
+- port
+- bridge network
 
 ## docker logs <container-name>
 - retrive the log od the container
+
+## docker run ubuntu cat etc/*release/
+- check the version of ubuntu
+
+## docker attach <container-id> 
+- docker continaer
+- 
   
