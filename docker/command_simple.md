@@ -49,6 +49,8 @@
 
  ## docker rmi -f $(docker images -q)
  - Delete all images on the host
+
+docker stop redis
   
   
     
