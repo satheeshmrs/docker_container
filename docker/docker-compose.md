@@ -84,4 +84,76 @@
   worker:
     image: worker
   ```
+   ## Docker compose version
+  version -1:
+  - Deploy into different vnet you can't do it
+  - no version to specify the sequence
+ 
+    ## Docker compose version 2
+    ```
+    version: 2
+    services:
+       redis: #Name of the container
+          image: redis #name of the image
+    db:
+      image: postgres:9.4
+    vote:
+      build: ./vote # folder name where the dockerfile is located.
+      ports:
+        -5000:80
+      links:
+        - redis
+      depends_on:
+        - redis
+
+    result:
+      image: result-app
+      ports:
+        - 5001:80
+      links:
+        - redis
+        - db:db 
+    worker:
+      image: worker
+    ```
+    - need to use version: in top of file
+    - n/w bridge in the
+    - no need to use link
+    - version:2 using dependson feature -> which will give you sequnce of container creation
+   
+      ## Docker compose version 3:
+      - similar to 2
+      - support to docker swarm
+      - version 3 - docker stock
+      ```
+    version: 3
+    services:
+       redis: #Name of the container
+          image: redis #name of the image
+    db:
+      image: postgres:9.4
+    vote:
+      build: ./vote # folder name where the dockerfile is located.
+      ports:
+        -5000:80
+      links:
+        - redis
+      depends_on:
+        - redis
+
+    result:
+      image: result-app
+      ports:
+        - 5001:80
+      links:
+        - redis
+        - db:db 
+    worker:
+      image: worker
+    ```
+
+    
+      
+   
+      
   
