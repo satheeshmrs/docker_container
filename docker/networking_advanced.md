@@ -28,6 +28,8 @@ docker run Ubuntu --network=none
 - we can create the network driver using below command
   ```bash
   docker network create --driver bridge --subnet 182.18.0.0/16 custom-isolated-network
+
+  docker network create --driver bridge --subnet 182.18.0.0/24 wp-mysql-network --gateway 182.18.0.1
   ```
   - list all n/ws
  ```bash
