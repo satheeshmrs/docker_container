@@ -28,28 +28,11 @@
       - docker run --cpus=.5 ubuntu
       - docker run --memory=100m ubuntu
    
-    ## Docker Advanced concept
-    ### Docker Storage
-    - FileSystem (Folder structure):
-      /var/lib/docker
-      ├── aufs
-      ├── images
-      └── containers 
-      └── volumes
+    
 
-    ### Layered architecture
-    base ubuntu system
-    changes in apt packages
-    changes in pip changes
-    source code
-    update entry point
-    Docker caches the layer
-    and it will use it for other images and also for update docker
-    it will save time --> for rebuild and create
-    Life of the layer is only the container is active
-    Conatiner layer --> Read/write
-    Image Layer --> Read only
-    Container --> you can change the app.py only on one container
+    
+    
+    
        
       
      
