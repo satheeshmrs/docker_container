@@ -30,4 +30,7 @@ OSM: (Open Service Mesh)
 
 <img width="1247" height="722" alt="image" src="https://github.com/user-attachments/assets/dc48af06-0eaa-4ba0-a962-3657df9c1c82" />
 
+--> Permissive traffic mode
+
+
 
