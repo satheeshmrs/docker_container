@@ -45,6 +45,21 @@ kubectl scale deployment kodekloudapp --replicas=5
   - Pods
   - Services
   - Deployment
+
+## KubeCtl with Field-selector
+kubectl get pods --field-selector=status.phase=Running
+- filter running pods
+
+  <img width="1372" height="556" alt="image" src="https://github.com/user-attachments/assets/a36e56c5-b4f2-4399-94b5-7c2c2799b5fb" />
+
+
+  <img width="922" height="150" alt="image" src="https://github.com/user-attachments/assets/6fa13198-490c-4b06-947e-caf3c90bce4e" />
+
+  <img width="1460" height="770" alt="image" src="https://github.com/user-attachments/assets/d7c4a096-456d-40c9-95c5-0de17c6cffc1" />
+
+
+
+
     
 
 
